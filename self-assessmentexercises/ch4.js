@@ -8,3 +8,5 @@ if (checkMe.length > 5) {
 } else {
 	console.log(false);
 }
+
+// Note: Could have use a variable to measure the length outside of the If Statement IOT use it again if necessary

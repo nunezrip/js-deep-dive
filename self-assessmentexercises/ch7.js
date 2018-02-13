@@ -9,3 +9,5 @@ for (let addThis = 0; addThis < 10; addThis++) {
 	console.log(addThis);
 }
 console.log(sum);
+
+// Answer/Note:

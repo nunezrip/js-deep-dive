@@ -5,6 +5,6 @@ let increaseByTwo = [1, 2, 3, 4, 5];
 let newArr = [];
 
 for (let i = 0; i < increaseByTwo.length; i++) {
-	newArr = increaseByTwo[i] + 2;
-	console.log(newArr);
+	newArr.push(increaseByTwo[i] + 2);
 }
+console.log(newArr);

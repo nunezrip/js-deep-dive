@@ -11,3 +11,5 @@ while (count < 4) {
 	count++;
 	console.log(sum);
 }
+
+// Answer/Note: Did not use "count2"/did not read the instructions correctly. There are two variables "count" and "count2"

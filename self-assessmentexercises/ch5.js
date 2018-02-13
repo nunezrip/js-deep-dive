@@ -12,3 +12,6 @@ function newNum(num) {
 }
 
 newNum(5);
+
+// Note: Used the Modulus or Remainder
+// Answer/Note: The idea is that the requirement called for an "IF Statement",begging the question, why did I used a Function. Lesson learned: When in doubt ask!

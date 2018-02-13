@@ -10,10 +10,12 @@ let checkObj = {
 
 function findProp(obj) {
 	for (const prop in obj) {
-		if (prop === 'foundNum') {
-			return 'Found!';
+		if (obj.hasOwnProperty(prop)) {
+			if (prop === 'foundNum') return 'Found!';
 		}
 	}
 	return 'Does not exist!';
 }
 console.log(findProp(checkObj));
+
+// Answer/Note - Use obj.hasOwnProperty so it does not walk down the property chain.
