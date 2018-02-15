@@ -43,7 +43,6 @@ const reducer = (a, b) => {
 			a[b[i]] = 1;
 		}
 	}
-
 	return a;
 };
 
@@ -66,17 +65,8 @@ function intersection(arrayOfArrays) {
 	return result.length > 0 ? result : null;
 }
 
-console.log(intersection([
-	[1, 2, 3],
-	[2, 1, 4],
-	[2, 3, 5]
-])); // [2]
-console.log(intersection([
-	[1, 5, 10, 20, 15],
-	[88, 1, 7, 5],
-	[1, 10, 15, 5, 20]
-])); // [1, 5]
-
+console.log(intersection([[1, 2, 3], [2, 1, 4], [2, 3, 5]])); // [2]
+console.log(intersection([[1, 5, 10, 20, 15], [88, 1, 7, 5], [1, 10, 15, 5, 20]])); // [1, 5]
 
 // Challenge 6
 
@@ -106,18 +96,14 @@ function union(arrayOfArrays) {
 
 function checkDuplicates(a, b) {
 	if (a === b) {
-
 	}
-
 }
 
 // const add = (a, b) => a + b;
 
-
 // console.log(reduce([4, 1, 3], add, 0));
 
 console.log(union(arrayOfArrays));
-
 
 // Challenge 7
 
@@ -125,8 +111,43 @@ console.log(union(arrayOfArrays));
 
 //  var arrCopy = Object.assign([], arr);
 
-
-
 // Challenge 8
 
 // Construct a function multiMap that will accept two arrays: an array of values and an array of callbacks. multiMap will return an object whose keys match the elements in the array of values. The corresponding values that are assigned to the keys will be arrays consisting of outputs from the array of callbacks, where the input to each callback is the key.
+
+function multiMap(arraVals, arrCallbacks) {
+	var results = {};
+	var arrCalls = [];
+	const len = arrVals.length;
+
+	for (let i = 0; i < len; i++) {
+		result[arraVals[1] = arrCallbacks.map(func => {
+return func(arrVals[i]);
+		});
+	
+	}
+
+	return results;
+}
+
+console.log(
+	multiMap(
+		['catfood', 'glue', 'beer'],
+		[
+			function(str) {
+				return str.toUpperCase();
+			},
+
+			function(str) {
+				return str[0].toUpperCase() + str.slice(1).toLowerCase();
+			},
+			function(str) {
+				return str + str;
+			},
+		],
+	),
+);
+
+{
+	catfood: ['CATFOOD', 'catfood', 'catfoodcatfood'];
+}
